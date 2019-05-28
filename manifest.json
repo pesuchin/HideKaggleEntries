@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "HideKaggleEntries",
+    "version": "1",
+    "description": "Kaggleでsubmit数を見るのが辛い方のためにsubmit数の列を削ってくれるchrome拡張機能です。",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.kaggle.com/*"
+            ],
+            "js": [
+                "hide-entries.js"
+            ]
+        }
+    ]
+}
